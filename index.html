@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-600 text-white">
+    <div class="m-4 text-center">
+        <h1 class="p-2 text-2xl text-center">Tasks App</h1>
+        <div class="text-center">
+            <h2 class="p-2 text-lg">New Task</h2>
+            <form id="inputForm"> 
+                <input type="text" name="taskName" id="taskName" class="text-black rounded outline outline-1 outline-slate-400 h-[28px] p-2">
+                <button class="bg-green-500 p-1 m-1 text-sm rounded outline outline-1 outline-green-600" id="inputBtn">Submit</button>
+            </form>
+        </div>
+        <div id="tasksListDiv">
+            
+        </div>
+
+        <ul id="tasksList" class="p-2 list-disc"></ul>
+        
+        <button id="deleteBtn" class="bg-red-500 outline outline-1 outline-red-700 p-1 m-1 rounded">Clear all tasks</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
